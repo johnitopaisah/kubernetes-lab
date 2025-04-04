@@ -151,9 +151,9 @@ minikube dashboard --url
 
 | Description             | Screenshot                       |
 |-------------------------|----------------------------------|
-| App running in browser | Hello, world! via localhost:8080 |
-| Kubernetes Dashboard   | Workload overview and logs       |
-| ECR push success       | Terminal output showing push     |
+| App running in browser | ![](./images/browser-running.png) |
+| Kubernetes Dashboard   | ![](./images/k8s-dashboard.png)   |
+| ECR push success       | ![](./images/ECR-push.png)     |
 
 *Add your screenshots to the repo as needed.*
 
