@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sinatra
+  labels:
+    app: sinatra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sinatra
+  template:
+    metadata:
+      labels:
+        app: sinatra
+    spec:
+      containers:
+      - name: sinatra
+        image: public.ecr.aws/z9j0k7n8/sinatra-example:latest
+        ports:
+        - containerPort: 4567
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 4567
+          
